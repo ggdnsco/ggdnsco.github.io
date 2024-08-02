@@ -55,7 +55,7 @@ view model =
     [ class """w-screen h-screen bg-black 
                text-white flex flex-row overflow-hidden"""
     ]
-    [ div [ class "w-1/2 p-10 text-3xl monospace" ]
+    [ div [ class "w-1/2 p-10 text-3xl font-mono" ]
       [ text "GG Data and Systems Co."
       ]
     , canvasHtml model

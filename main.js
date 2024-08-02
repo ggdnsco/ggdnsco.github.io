@@ -8459,7 +8459,7 @@ var $author$project$Main$view = function (model) {
 				$elm$html$Html$div,
 				_List_fromArray(
 					[
-						$elm$html$Html$Attributes$class('w-1/2 p-10 text-3xl monospace')
+						$elm$html$Html$Attributes$class('w-1/2 p-10 text-3xl font-mono')
 					]),
 				_List_fromArray(
 					[
