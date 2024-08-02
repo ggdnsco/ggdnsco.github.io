@@ -8228,6 +8228,7 @@ var $author$project$Main$update = F2(
 					$elm$core$Platform$Cmd$none);
 		}
 	});
+var $elm$html$Html$a = _VirtualDom_node('a');
 var $elm_explorations$webgl$WebGL$Internal$Antialias = {$: 3};
 var $elm_explorations$webgl$WebGL$antialias = $elm_explorations$webgl$WebGL$Internal$Antialias;
 var $author$project$Main$Vertex = F2(
@@ -8442,6 +8443,12 @@ var $elm$html$Html$Attributes$stringProperty = F2(
 	});
 var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
 var $elm$html$Html$div = _VirtualDom_node('div');
+var $elm$html$Html$Attributes$href = function (url) {
+	return A2(
+		$elm$html$Html$Attributes$stringProperty,
+		'href',
+		_VirtualDom_noJavaScriptUri(url));
+};
 var $elm$html$Html$Attributes$id = $elm$html$Html$Attributes$stringProperty('id');
 var $elm$html$Html$section = _VirtualDom_node('section');
 var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
@@ -8459,11 +8466,50 @@ var $author$project$Main$view = function (model) {
 				$elm$html$Html$div,
 				_List_fromArray(
 					[
-						$elm$html$Html$Attributes$class('w-1/2 p-10 text-3xl font-mono')
+						$elm$html$Html$Attributes$class('w-1/2 p-10 text-3xl flex flex-col justify-between font-share-tech-mono')
 					]),
 				_List_fromArray(
 					[
-						$elm$html$Html$text('GG Data and Systems Co.')
+						$elm$html$Html$text('GG Data and Systems Co.'),
+						A2(
+						$elm$html$Html$div,
+						_List_fromArray(
+							[
+								$elm$html$Html$Attributes$class('text-base flex flex-col space-y-4')
+							]),
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Careers')
+									])),
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Services')
+									])),
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Contact Us')
+									]))
+							]))
 					])),
 				A2(
 				$elm$html$Html$div,

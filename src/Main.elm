@@ -55,8 +55,13 @@ view model =
     [ class """w-screen h-screen bg-black 
                text-white flex flex-row overflow-hidden"""
     ]
-    [ div [ class "w-1/2 p-10 text-3xl font-mono" ]
+    [ div [ class "w-1/2 p-10 text-3xl flex flex-col justify-between font-share-tech-mono" ]
       [ text "GG Data and Systems Co."
+      , div [ class "text-base flex flex-col space-y-4" ]
+        [ a [ href "/" ] [ text "Careers" ]
+        , a [ href "/" ] [ text "Services" ]
+        , a [ href "/" ] [ text "Contact Us" ]
+        ]
       ]
     , canvasHtml model
         |> div [ id "webgl", class "w-1/2 bg-white" ]

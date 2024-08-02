@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.elm"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'share-tech-mono': ['"Share Tech Mono"', 'monospace']
+      }
+    },
   },
   plugins: [],
 }
